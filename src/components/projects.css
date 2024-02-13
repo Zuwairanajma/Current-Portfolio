@@ -1,0 +1,7 @@
+.projects-container {
+  /* height: 99vh; Adjust to 90% of the viewport height */
+
+  /* overflow-y: hidden;
+    overflow-x: hidden; */
+  overflow: -moz-hidden-unscrollable;
+}
