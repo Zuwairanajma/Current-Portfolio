@@ -22,7 +22,6 @@ function Hero() {
       <div className="text-yellow-400 p-5 flex flex-col items-center font-agbalumo space-y-0 px-4">
 
         <div className="mt-24 h-fit">
-          {/* <div className="h-fit w-full mt-16"> */}
           <p className="text-3xl md:text-4xl max-sm:text-3xl w-fit font-bold">
             Hi! my name is Zuwaira Sadiq,
             I am a

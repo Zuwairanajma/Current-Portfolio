@@ -41,7 +41,6 @@ function App() {
             <Route path="/contact" element={<Contact className="w-full flex justify-center items-center" />} />
           </Routes>
         </div>
-        {/* Conditionally render the footer */}
         {!location.pathname.includes('/projects') && <Footer className="w-full flex justify-center items-center" />}
       </div>
     </div>

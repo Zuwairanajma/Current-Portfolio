@@ -39,7 +39,6 @@ function ProjectCard({ project }) {
   );
 }
 
-// Add prop types validation
 ProjectCard.propTypes = {
   project: PropTypes.shape({
     imageURL: PropTypes.string.isRequired,

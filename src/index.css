@@ -59,32 +59,3 @@ body {
   background-color: #facc15;
   transform: translateY(-1px);
 }
-
-/* Add this in your global CSS file */
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideOut {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.nav-animate-in {
-  animation: slideIn 0.5s forwards;
-}
-
-.nav-animate-out {
-  animation: slideOut 0.5s forwards;
-}
