@@ -22,13 +22,13 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setLoading(false);
+          return result.text;
         },
         (error) => {
-          console.log(error.text);
           setError(true);
           setLoading(false);
+          return error.text;
         },
       );
   };

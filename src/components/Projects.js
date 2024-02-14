@@ -21,7 +21,6 @@ function Projects() {
   };
 
   const handleClose = () => {
-    console.log('Closing modal');
     setOpen(false);
   };
 

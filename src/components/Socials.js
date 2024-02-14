@@ -4,6 +4,7 @@ import {
   faGithub, faTwitter, faLinkedin, faAngellist, faMedium,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 
 function Socials({ flex }) {
   const socials = [
@@ -25,9 +26,9 @@ function Socials({ flex }) {
     </div>
   );
 }
+
 Socials.propTypes = {
-  flex: PropTypes.string,
+  flex: PropTypes.string.isRequired,
 };
-Socials.propTypes.flex = PropTypes.string.isRequired;
 
 export default Socials;
