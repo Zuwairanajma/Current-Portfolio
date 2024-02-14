@@ -43,7 +43,7 @@
 
 <!-- Features -->
 
-### [Live Preview](https//)
+### [Live Preview](https://juwairiyya-sadiq.netlify.app/)
 
 ### Key Features <a name="key-features"></a>
 
@@ -95,7 +95,7 @@ To run the project, execute the following command:
 
 
 ### Deployment
-Deployment [here](https)
+Deployment [here](https://juwairiyya-sadiq.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
