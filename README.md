@@ -43,7 +43,7 @@
 
 <!-- Features -->
 
-### [Live Preview](http)
+### [Live Preview](https//)
 
 ### Key Features <a name="key-features"></a>
 
