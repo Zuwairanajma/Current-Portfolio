@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
+// import { lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Particles, { initParticlesEngine } from '@tsparticles/react';
+import { initParticlesEngine } from '@tsparticles/react';
 import { loadFull } from 'tsparticles';
 import particlesOptions from './particles.json';
 import Navbar from './components/navigation/Navbar';
@@ -9,6 +10,8 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
+const Particles = lazy(() => import('@tsparticles/react'));
 
 function App() {
   const location = useLocation();
@@ -30,7 +33,11 @@ function App() {
 
   return (
     <div id="app" className="relative overflow-hidden">
-      {renderParticles && init && <Particles options={particlesOptions} />}
+      {renderParticles && init && (
+      <Suspense fallback={<div>Loading particles...</div>}>
+        <Particles options={particlesOptions} />
+      </Suspense>
+      )}
       <div className="relative z-10">
         <Navbar />
         <div className="overflow-y-auto max-h-screen">
