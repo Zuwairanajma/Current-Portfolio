@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-navigation-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+.swiper-button-next {
+  color: #eef5f3;
+  padding: 20px 5px;
+  position: absolute;
+  right: 0;
+  font-size: -20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #a855f7;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.swiper-button-next:hover {
+  background-color: #facc15;
+  transform: translateY(-1px);
+}
+
+.swiper-button-prev {
+  color: #eef5f3;
+  padding: 20px 5px;
+  position: absolute;
+  left: 0;
+  font-size: -20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #a855f7;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.swiper-button-prev:hover {
+  background-color: #facc15;
+  transform: translateY(-1px);
+}
