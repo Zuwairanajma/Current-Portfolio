@@ -17,11 +17,11 @@ function Hero() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center w-full h-[80vh] p-4 mb-8 flex-col border-secondary shadow-[0_60px_50px_-40px_rgba(0,128,128,0.3)]">
+    <div className="mt-16 flex items-center justify-center w-full h-[80vh] p-4 mb-8 flex-col border-secondary shadow-[0_60px_50px_-40px_rgba(0,128,128,0.3)]">
 
       <div className="text-yellow-400 p-5 flex flex-col items-center font-agbalumo space-y-0 px-4">
 
-        <div className="mt-24 h-fit">
+        <div className="mt-4 h-fit">
           <p className="text-3xl md:text-4xl max-sm:text-3xl w-fit font-bold">
             Hi! my name is Zuwaira Sadiq,
             I am a
@@ -38,9 +38,9 @@ function Hero() {
         </p>
       </div>
       <div className="mt-8 w-full flex justify-center">
-        <button type="button" className=" mt-10 transition-all my-3  w-full h-12 md:h-16 text-neutral-50 bg-purple-500 hover:bg-yellow-400 hover:text-neutral-50 font-lobster text-2xl">
+        <button type="button" className=" mt-2 transition-all my-3  w-full h-12 md:h-16 text-neutral-50 bg-purple-500 hover:bg-yellow-400 hover:text-neutral-50 font-lobster text-2xl">
           <a
-            href="https://drive.google.com/file/d/1iaZOPcrNCiF0uJmYQSgFG6ChmbJTdYH3/view?usp=sharing"
+            href="https://drive.google.com/file/d/1-hvWWQBYnZdOvYT7XtntRsERLy3SBThf/view?usp=sharing"
             target="blank"
           >
             Get my resume
