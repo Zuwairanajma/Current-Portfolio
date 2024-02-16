@@ -283,7 +283,7 @@
 		  "acceleration": 9.81,
 		  "enable": false,
 		  "inverse": false,
-		  "maxSpeed": 50
+		  "maxSpeed": 30
 		},
 		"path": {
 		  "clamp": true,
@@ -319,8 +319,8 @@
 	  "number": {
 		"density": {
 		  "enable": true,
-		  "width": 2000,
-		  "height": 980
+		  "width": 1900,
+		  "height": 900
 		},
 		"limit": {
 		  "mode": "delete",
@@ -399,8 +399,8 @@
 		  },
 		  "rate": {
 			"value": {
-			  "min": 4,
-			  "max": 9
+			  "min": 3,
+			  "max": 7
 			}
 		  },
 		  "sizeOffset": true,
@@ -418,7 +418,7 @@
 		  "value": 0
 		},
 		"mode": "vertical",
-		"speed": 15
+		"speed": 10
 	  },
 	  "tilt": {
 		"value": 0,
@@ -447,8 +447,8 @@
 		"distance": 5,
 		"enable": false,
 		"speed": {
-		  "angle": 40,
-		  "move": 8
+		  "angle": 30,
+		  "move": 6
 		}
 	  },
 	  "life": {
@@ -519,7 +519,7 @@
 		"distance": 1,
 		"duration": 1,
 		"factor": 1,
-		"speed": 1
+		"speed": 0
 	  }
 	},
 	"pauseOnBlur": true,
