@@ -68,7 +68,7 @@
 			  "value": "#ff0000",
 			  "animation": {
 				"enable": true,
-				"speed": 400,
+				"speed": 200,
 				"sync": true
 			  }
 			},
@@ -87,7 +87,7 @@
 			"size": {
 			  "value": {
 				"min": 1,
-				"max": 5
+				"max": 3
 			  },
 			  "animation": {
 				"enable": true,
@@ -104,7 +104,7 @@
 		  "duration": 0.4,
 		  "easing": "ease-out-quad",
 		  "factor": 1,
-		  "maxSpeed": 50,
+		  "maxSpeed": 30,
 		  "speed": 1
 		},
 		"bounce": {
@@ -149,14 +149,14 @@
 		  "duration": 0.4,
 		  "factor": 100,
 		  "speed": 1,
-		  "maxSpeed": 50,
+		  "maxSpeed": 30,
 		  "easing": "ease-out-quad",
 		  "divs": {
 			"distance": 200,
 			"duration": 0.4,
 			"factor": 100,
 			"speed": 1,
-			"maxSpeed": 50,
+			"maxSpeed": 30,
 			"easing": "ease-out-quad",
 			"selectors": []
 		  }
@@ -198,7 +198,7 @@
 	  },
 	  "collisions": {
 		"absorb": {
-		  "speed": 2
+		  "speed": 1
 		},
 		"bounce": {
 		  "horizontal": {
@@ -222,7 +222,7 @@
 		  "h": {
 			"count": 0,
 			"enable": true,
-			"speed": 50,
+			"speed": 30,
 			"decay": 0,
 			"delay": 0,
 			"sync": false,
@@ -302,7 +302,7 @@
 		},
 		"random": false,
 		"size": false,
-		"speed": 2,
+		"speed": 1,
 		"spin": {
 		  "acceleration": 0,
 		  "enable": false
@@ -319,8 +319,8 @@
 	  "number": {
 		"density": {
 		  "enable": true,
-		  "width": 2200,
-		  "height": 1080
+		  "width": 2000,
+		  "height": 980
 		},
 		"limit": {
 		  "mode": "delete",
@@ -361,17 +361,17 @@
 		"close": true,
 		"fill": true,
 		"options": {},
-		"type": "circle"
+		"type": "star"
 	  },
 	  "size": {
 		"value": {
-		  "min": 3,
-		  "max": 9
+		  "min": 1,
+		  "max": 5
 		},
 		"animation": {
 		  "count": 0,
 		  "enable": true,
-		  "speed": 3,
+		  "speed": 1,
 		  "decay": 0,
 		  "delay": 0,
 		  "sync": false,
@@ -418,7 +418,7 @@
 		  "value": 0
 		},
 		"mode": "vertical",
-		"speed": 25
+		"speed": 15
 	  },
 	  "tilt": {
 		"value": 0,
@@ -447,8 +447,8 @@
 		"distance": 5,
 		"enable": false,
 		"speed": {
-		  "angle": 50,
-		  "move": 10
+		  "angle": 40,
+		  "move": 8
 		}
 	  },
 	  "life": {
