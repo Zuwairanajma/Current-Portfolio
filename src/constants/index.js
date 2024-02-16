@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     imageURL: 'images/space-travelers-hub3.png',
     name: 'SpaceShip Travellers Hub',
     description:
@@ -10,6 +11,7 @@ export const projects = [
   },
 
   {
+    id: 2,
     imageURL: 'images/todolist.png',
     name: 'To Do List App',
     description:
@@ -20,16 +22,18 @@ export const projects = [
   },
 
   {
+    id: 3,
     imageURL: 'images/math.PNG',
     name: 'Math Magicians',
     description:
       'A website for all fans of mathematics, it allows users to make simple calculations and displays random motivational quotes. ',
     tech: ['html', 'css', 'javascript', 'react'],
-    projectURL: 'https://melodic-malabi-b2a81d.netlify.app/',
-    projectSrc: 'https://github.com/Zuwairanajma/math-magician',
+    projectURL: 'https://maths-magician-zuwairanajma.netlify.app/',
+    projectSrc: 'https://github.com/Zuwairanajma/math-magician-projects',
   },
 
   {
+    id: 4,
     imageURL: 'images/track.PNG',
     name: 'Budget App',
     description:
@@ -40,6 +44,7 @@ export const projects = [
   },
 
   {
+    id: 5,
     imageURL: 'images/Task-Tracker-App.png',
     name: 'Task Tracker',
     description:
@@ -50,6 +55,7 @@ export const projects = [
   },
 
   {
+    id: 6,
     imageURL: 'images/Stock-Screener App .png',
     name: 'Stock Market App',
     description:

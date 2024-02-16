@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './projects.css';
 
-function Projects() {
+const Projects = () => {
   const [open, setOpen] = useState(false);
   const [card, setCard] = useState(null);
 
@@ -19,9 +19,9 @@ function Projects() {
     setCard(crd);
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
+    return true;
   };
 
   const responsive = {
@@ -44,19 +44,17 @@ function Projects() {
       },
     },
   };
-
   return (
-    <div className=" project-container h-80vh p-6 w-full z-0 shadow-[0_60px_50px_-40px_rgba(0,128,128,0.3)] flex flex-col items-center justify-center overflow-hidden">
-      {!open && (
-        <h2 className="mt-8 pt-8 text-4xl text-center text-yellow-400 underline-offset-4 my-5 font-agbalumo font-bold ">
+    <div className="w-full h-full z-0 gap -2 shadow-[0_60px_50px_-40px_rgba(0,128,128,0.3)] ">
+
+      <div className="w-full h-full">
+        <h2 className="mt-10 pt-10 text-4xl text-center text-yellow-400 underline-offset-4 my-5 font-agbalumo font-bold ">
           My Work
         </h2>
-      )}
-      {!open && (
-        <div className="w-full h-70vh flex justify-center items-center align-center">
+        <div className="w-full h-max flex gap-5 flex-wrap  items-center justify-center">
           <Swiper
             id="projects"
-            className="w-full h-80% p-6 flex justify-center items-center"
+            className="w-full p-6 h-fit flex justify-center items-center"
             modules={[Navigation, EffectCoverflow, Pagination]}
             navigation
             loop
@@ -75,36 +73,32 @@ function Projects() {
               <SwiperSlide
                 onClick={() => handleClick(project)}
                 key={project.id}
-                className="mt-n12 h-60vh w-80vw flex items-center justify-center border-slate-200"
+                className="h-max w-max flex items-center justify-center border-slate-200 "
               >
                 <ProjectCard project={project} />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-      )}
+      </div>
       <Modal
         isOpen={open}
         onRequestClose={handleClose}
         shouldCloseOnOverlayClick
-        contentLabel="Project Details"
-        ariaHideApp={false}
-        overlayClassName="fixed inset-0 flex justify-center items-center bg-black opacity-50 backdrop-filter backdrop-blur-lg"
-        className="modal-content mt-12"
+        overlayClassName="Overlay"
+        className="ModalContent mt-12"
         contentClassName="flex flex-col items-center justify-center w-3/4 max-w-screen-md h-4/4 mt-16"
-      >
-        <div className="bg-slate-200 bg-opacity-25 text-purple-500 w-full h-full flex flex-col items-center justify-center border-primary rounded-xl relative">
-          <div className="w-full bg-primary p-5 rounded-xl">
-            <div className="w-full flex justify-end items-end absolute top-0 right-0 z-100">
-              <FontAwesomeIcon
-                icon={faClose}
-                onClick={handleClose}
-                className="text-purple-500 h-6 w-6 mb-1 cursor-pointer mt-8 mr-4 sm:mt-2"
-                style={{ zIndex: 99999 }}
-              />
-            </div>
-            {card && (
-            <>
+        contentElement={() => (
+          <div className="bg-slate-200 bg-opacity-25 text-purple-500 w-full h-full flex flex-col items-center justify-center border-primary rounded-xl relative">
+            <div className="w-full md:w-3/4 bg-primary p-5 rounded-xl">
+              <div className="w-full flex justify-end items-end z-100">
+                <FontAwesomeIcon
+                  icon={faClose}
+                  onClick={handleClose}
+                  className="text-purple-500 h-6 w-6 mb-1 cursor-pointer mt-10 mr-2 sm:mt-6"
+                  style={{ zIndex: 99999 }}
+                />
+              </div>
               <img
                 src={card.imageURL}
                 alt={card.name}
@@ -112,24 +106,24 @@ function Projects() {
               />
               <span className="text-lg font-bold mt-2">{card.name}</span>
               <p className="text-sm mt-1 w-full max-w-lg">{card.description}</p>
-              <div className="w-full flex flex-wrap gap-2 mt-3">
+              <div className="w-full flex max-sm:grid max-sm:grid-cols-2 gap-3 mt-5">
                 {card.tech.map((element) => (
                   <div
-                    className="py-1 px-2 box-border rounded border bg-purple-500 text-white hover:bg-primary hover:text-purple-500 hover:cursor-pointer"
+                    className="py-1 px-2 box-border rounded border bg-purple-500 text-white w-full hover:bg-primary hover:text-purple-500 hover:cursor-pointer flex items-center justify-center"
                     key={element.id}
                   >
-                    <span>{element.toUpperCase()}</span>
+                    <span className="w-max h-max  text-center">
+                      {element.toUpperCase()}
+                    </span>
                   </div>
                 ))}
               </div>
-            </>
-            )}
+            </div>
           </div>
-        </div>
-      </Modal>
-
+        )}
+      />
     </div>
   );
-}
+};
 
 export default Projects;

@@ -3,6 +3,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from './images/triangle-tech2.png';
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -12,9 +13,15 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-purple-500 text-neutral-50 w-full p-3 flex justify-between items-center fixed top-0 z-50">
-      <div className="font-lobster text-2xl cursor-pointer hover:-translate-y-1 hover:underline transition-all">
-        <Link to="/">Juwairiyya</Link>
+    <nav className="bg-purple-500 text-neutral-50 w-full p-2 flex justify-between items-center fixed top-0 z-50">
+      <div className="flex font-lobster text-2xl cursor-pointer hover:-translate-y-1 hover:underline transition-all">
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="Logo" className="mt-n8 h-14 w-20 mr-2 rounded-full shadow-lg bg-black p-1" style={{ filter: 'brightness(110%)' }} />
+          {' '}
+          {/* Use the imported logo */}
+          {/* Juwairiyya */}
+          <span className="text-white font-bold text-xl">Juwairiyya</span>
+        </Link>
       </div>
       <div className="sm:hidden">
         <FontAwesomeIcon

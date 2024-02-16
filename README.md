@@ -90,7 +90,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
- npm run dev
+ npm start
 ```
 
 
